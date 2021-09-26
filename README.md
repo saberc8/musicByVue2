@@ -1,29 +1,20 @@
-# music-on-vue
+# 基于 Vue2 的网易云播放器
 
-## Project setup
-```
-npm install
-```
+写了很久后台，这次温故自己的前端知识，重新从0到1写一个ToC项目，深入理解vue。欢迎沟通~
 
-### Compiles and hot-reloads for development
+### 后端接口
+
+https://binaryify.github.io/NeteaseCloudMusicApi
+
+### 技术栈
+
+- **_Vue_**
+- **_Sass_**
+- **_workbox-webpack-plugin_** 谷歌开发的利用 Service Worker 实现页面预缓存的插件。
+
+### 安装与使用
+
 ```
+npm i
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
