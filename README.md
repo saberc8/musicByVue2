@@ -18,3 +18,21 @@ https://binaryify.github.io/NeteaseCloudMusicApi
 npm i
 npm run serve
 ```
+
+### 用到的包
+better-scroll
+
+axios
+
+### 其他
+
+### vuex/dist/logger 
+
+Vuex 自带一个日志插件用于一般的调试，生成状态快照，对比出改变前后不同的值。logger 插件会生成状态快照，所以仅在开发环境使用。
+
+### theme-chalk
+
+element-ui 主题
+
+### 命令式调用
+https://blog.csdn.net/dandoudou/article/details/109501561
