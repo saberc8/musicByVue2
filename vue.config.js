@@ -1,5 +1,3 @@
-const WorkboxPlugin = require("workbox-webpack-plugin");
-
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
@@ -17,18 +15,14 @@ module.exports = {
           secure: false,
         },
       },
-      host: '0.0.0.0',
-      port: 5300,
+      port: 8889,
     },
     externals: isProd ? {
       vue: 'Vue',
       'vue-router': 'VueRouter',
       vuex: 'Vuex',
       axios: 'axios',
-    }: {},
-    plugins: [
-      new WorkboxPlugin.GenerateSW()
-    ]
+    }: {}
   },
   css: {
     loaderOptions: {
@@ -40,4 +34,5 @@ module.exports = {
       },
     },
   },
+  lintOnSave: false
 }
