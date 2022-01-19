@@ -8,7 +8,7 @@ import '@/utils/rem'
 import '@/utils/axios'
 import global from './utils/global'
 
-
+Vue.use(global)
 Vue.config.productionTip = false;
 
 new Vue({
