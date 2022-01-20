@@ -13,7 +13,11 @@
         </div>
       </div>
     </div>
-    <div class="right">search</div>
+    <div class="right">
+      <div>
+        
+      </div>
+    </div>
   </div>
 </template>
 
