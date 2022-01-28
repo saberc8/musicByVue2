@@ -50,9 +50,37 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: blueviolet;
-  .menuList {
-    height: 500px;
+  background-color: var(--menu-bgcolor);
+
+  .menu-list {
+    color: var(--font-color-grey2);
+    .menu-item {
+      @include text-ellipsis;
+      padding: 12px 18px;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--menu-item-hover-bg);
+      }
+
+      &-active {
+        color: $theme-color;
+        background: var(--menu-item-active-bg);
+
+        i {
+          color: $theme-color;
+        }
+      }
+
+      .iconfont {
+        font-size: $font-size-medium-sm;
+      }
+
+      .menu-title {
+        font-size: $font-size-medium-sm;
+        margin-left: 8px;
+      }
+    }
   }
 }
 </style>

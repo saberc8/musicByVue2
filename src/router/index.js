@@ -7,6 +7,9 @@ import Mvs from "@/views/mvs"
 
 Vue.use(VueRouter);
 
+// 内容需要居中的页面
+export const layoutCenterNames = ['discovery', 'playlists', 'songs', 'mvs']
+
 // 需要显示在侧边栏菜单的页面
 export const menuRoutes = [
   {

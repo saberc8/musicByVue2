@@ -14,17 +14,25 @@
       </div>
     </div>
     <div class="right">
-      <div>
-        
-      </div>
+    <div class="right">
+      <Search />
+
+      <Theme />
+    </div>
     </div>
   </div>
 </template>
 
 <script>
 import { requestFullScreen, exitFullscreen, isFullscreen } from "@/utils"
+import Theme from "@/components/theme.vue"
+import Search from "@/components/search.vue"
 
 export default {
+  components: {
+    Search,
+    Theme
+  },
   methods: {
     handleClickHome() {
       this.$router.push("/discovery");
@@ -44,10 +52,21 @@ export default {
 <style lang="scss" scoped>
 @import "~@/style/element-overwrite.scss";
 .header {
-  background-color: var(--header-color);
   display: flex;
   height: $header-height;
   justify-content: space-between;
+  background-color: var(--header-bgcolor);
+  padding-right: 36px;
+
+  @include el-input-theme(
+    var(--header-input-color),
+    var(--header-input-bgcolor),
+    var(--header-input-placeholder-color)
+  );
+
+  /deep/.iconfont {
+    color: var(--header-font-color);
+  }
 
   .left {
     padding: 14px 14px 0 8px;
