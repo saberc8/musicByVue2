@@ -34,6 +34,7 @@ Vuex 自带一个日志插件用于一般的调试，生成状态快照，对比
 
 element-ui 主题
 vue-meta
+go-stroage
 
 
 ### 命令式调用
