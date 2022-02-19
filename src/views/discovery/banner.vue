@@ -1,3 +1,11 @@
+<!--
+ * @Author: yusenlin
+ * @Date: 2022-02-01 12:32:53
+ * @LastEditTime: 2022-02-19 22:06:10
+ * @LastEditors: yusenlin
+ * @Description: 首页 banner
+ * @FilePath: /music-on-vue/src/views/discovery/banner.vue
+-->
 <template>
   <div class="banner">
     <el-carousel :interval="4000" class="banner-carousel" type="card">
@@ -26,6 +34,7 @@ export default {
     console.log(getBannerData)
     this.banners = getBannerData.banners
   }
+
  }
 </script>
 

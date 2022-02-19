@@ -21,6 +21,7 @@ export const menuRoutes = [
       icon: 'music',
     },
   },
+  
   {
     path: '/playlists',
     name: 'playlists',

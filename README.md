@@ -24,6 +24,8 @@ better-scroll
 
 axios
 
+vue-meta  更优雅的修改page title
+
 ### 其他
 
 ### vuex/dist/logger 
@@ -33,7 +35,7 @@ Vuex 自带一个日志插件用于一般的调试，生成状态快照，对比
 ### theme-chalk
 
 element-ui 主题
-vue-meta
+
 go-stroage
 
 ### 命令式调用

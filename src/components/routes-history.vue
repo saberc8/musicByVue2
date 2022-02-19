@@ -1,3 +1,12 @@
+<!--
+ * @Author: yusenlin
+ * @Date: 2022-01-19 16:45:08
+ * @LastEditTime: 2022-02-19 21:03:04
+ * @LastEditors: yusenlin
+ * @Description: header路由记录组件
+ * @FilePath: /music-on-vue/src/components/routes-history.vue
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
 <template>
   <div class="routes-history">
     <Icon

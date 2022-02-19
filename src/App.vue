@@ -7,6 +7,11 @@
 <script>
 import Layout from "@/layout";
 export default {
+  metaInfo() {
+    return {
+      title: 'musicByVue'
+    }
+  }, 
   components: {
     Layout
   },
@@ -14,6 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #app {
   height: 100%;
   background-color: var(--body-bgcolor);
