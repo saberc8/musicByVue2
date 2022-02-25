@@ -10,8 +10,6 @@ https://binaryify.github.io/NeteaseCloudMusicApi
 
 - **_Vue_**
 - **_Sass_**
-- **_workbox-webpack-plugin_** 谷歌开发的利用 Service Worker 实现页面预缓存的插件。
-
 ### 安装与使用
 
 ```
@@ -36,7 +34,7 @@ Vuex 自带一个日志插件用于一般的调试，生成状态快照，对比
 
 element-ui 主题
 
-go-stroage
+go-storage
 
 ### 命令式调用
 https://blog.csdn.net/dandoudou/article/details/109501561

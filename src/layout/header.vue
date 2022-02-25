@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2022-01-11 17:22:34
- * @LastEditTime: 2022-02-19 20:54:40
- * @LastEditors: your name
+ * @LastEditTime: 2022-02-25 16:15:01
+ * @LastEditors: yusenlin
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /music-on-vue/src/layout/header.vue
 -->
@@ -14,10 +14,10 @@
           <Icon :size="9" type="home" />
         </div>
         <div @click="exitFullscreen" class="mac-button yellow">
-          <Icon :size="9" type="minus" />
+          <Icon :size="6" type="fengexian" />
         </div>
         <div @click="fullscreen" class="mac-button green">
-          <Icon :size="9" type="fullscreen" />
+          <Icon :size="8" type="arrawsalt" />
         </div>
       </div>
     </div>

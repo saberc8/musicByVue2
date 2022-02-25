@@ -1,7 +1,7 @@
 <!--
  * @Author: yusenlin
  * @Date: 2022-01-18 15:47:01
- * @LastEditTime: 2022-02-19 22:06:04
+ * @LastEditTime: 2022-02-25 15:55:52
  * @LastEditors: yusenlin
  * @Description: 发现音乐
  * @FilePath: /music-on-vue/src/views/discovery/index.vue
@@ -33,4 +33,4 @@ export default {
 .discovery {
 	padding: 18px 32px;
 }
-</style>
+</style>1

@@ -7,14 +7,15 @@ module.exports = {
     devServer: {
       open: true,
       disableHostCheck: true,
-      proxy: {
-        '/netease-api': {
-          target: 'http://localhost:3000',
-          pathRewrite: { '^/netease-api': '' },
-          changeOrigin: true,
-          secure: false,
-        },
-      },
+			proxy: {
+				'/netease-api': {
+					target: 'http://localhost:3000',
+					pathRewrite: { '^/netease-api': '' },
+					changeOrigin: true,
+					secure: false,
+				},
+			},
+      host: '127.0.0.1',
       port: 8889,
     },
     externals: isProd ? {

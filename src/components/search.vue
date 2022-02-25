@@ -1,6 +1,7 @@
 <template>
   <div>
     搜索
+    <Icon :size="20" type="sousuo" />
   </div>
 </template>
 

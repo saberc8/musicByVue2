@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <user />
+    <!-- <user /> -->
     <!-- <div class="menuList">
       <div v-for="(item, index) in menus.children" :key="index">
         <Icon :size="16" :type="item.meta.icon" class="iconfont" />
@@ -16,7 +16,7 @@
         tag="li"
         v-for="(item, index) in menus[0].children"
       >
-        <Icon :size="16" :type="item.meta.icon" class="iconfont" />
+        <Icon :size="20" :type="item.meta.icon" class="iconfont" />
         <span class="menu-title">{{ item.meta.title }}</span>
       </router-link>
     </ul>
@@ -58,7 +58,9 @@ export default {
       @include text-ellipsis;
       padding: 12px 18px;
       cursor: pointer;
-
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
       &:hover {
         background: var(--menu-item-hover-bg);
       }

@@ -12,7 +12,7 @@
           <p>{{ themeValue.title }}</p>
         </div>
       </div>
-      <Icon :backdrop="true" slot="reference" type="skin" />
+      <Icon :backdrop="true" slot="reference" type="zhuti_tiaosepan_o" />
     </el-popover>
   </div>
 </template>
@@ -24,6 +24,7 @@ import variablesWhite from "@/style/themes/variables-white";
 import variablesRed from "@/style/themes/variables-red";
 
 const THEME_KEY = "__theme__";
+
 const themes = {
   white: "white",
   dark: "dark",
