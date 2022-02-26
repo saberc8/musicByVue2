@@ -7,7 +7,6 @@ import { isDef, notify } from './common';
 
 export function createSong(song) {
   const { id, name, img, artists, duration, albumId, albumName,mvId, ...rest } = song
-
   return {
     id,
     name,
@@ -15,8 +14,8 @@ export function createSong(song) {
     artists,
     duration,
     albumName,
-    url: genSongPlayUrl(song.id),
-    artistsText: genArtistisText(artists),
+    url: getSongPlayUrl(song.id),
+    artistsText: getArtistsText(artists),
     durationSecond: duration / 1000,
     // 专辑 如果需要额外请求封面的话必须加上
     albumId,
@@ -37,7 +36,7 @@ export async function getSongImg(id, albumId) {
   return picUrl
 }
 
-export function genArtistisText(artists) {
+export function getArtistsText(artists) {
   return (artists || []).map(({ name }) => name).join('/')
 }
 
@@ -55,6 +54,6 @@ export function goMv(id) {
   router.push(`/mv/${id}`) 
 }
 
-function genSongPlayUrl(id) {
+function getSongPlayUrl(id) {
   return `https://music.163.com/song/media/outer/url?id=${id}.mp3`
 }

@@ -1,7 +1,7 @@
 <!--
  * @Author: yusenlin
  * @Date: 2022-02-01 12:32:53
- * @LastEditTime: 2022-02-19 22:06:10
+ * @LastEditTime: 2022-02-26 16:22:57
  * @LastEditors: yusenlin
  * @Description: 首页 banner
  * @FilePath: /music-on-vue/src/views/discovery/banner.vue
@@ -31,7 +31,6 @@ export default {
 
   async created() {
     const getBannerData = await getBanner()
-    console.log(getBannerData)
     this.banners = getBannerData.banners
   }
 
